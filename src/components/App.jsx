@@ -8,11 +8,10 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: 'red',
-        borderRadius: 10,
         backgroundColor: 'black',
       }}
     >
-      Everything Installed Correctly
+      &#128526; Everything Installed Correctly &#128513;
     </div>
   );
 };
