@@ -1,17 +1,30 @@
+import user from '../data/user.json';
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: 'red',
-        backgroundColor: 'black',
-      }}
-    >
-      &#128526; Everything Installed Correctly &#128513;
+    <div class="profile">
+      <div class="description">
+        <img src={user.avatar} alt="User avatar" class="avatar" />
+        <p class="name">{user.username}</p>
+        <p class="tag">{user.tag}</p>
+        <p class="location">{user.location}</p>
+      </div>
+
+      <ul class="stats">
+        <li>
+          <span class="label">Followers</span>
+          <span class="quantity">: {user.stats.followers}</span>
+        </li>
+        <li>
+          <span class="label">Views</span>
+          <span class="quantity">: {user.stats.views}</span>
+        </li>
+        <li>
+          <span class="label">Likes</span>
+          <span class="quantity">: {user.stats.likes}</span>
+        </li>
+      </ul>
     </div>
   );
 };
