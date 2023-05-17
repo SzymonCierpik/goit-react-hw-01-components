@@ -1,3 +1,3 @@
 export const Profile = props => {
-  return <ul class="friend-list"></ul>;
+  return <ul className="friend-list"></ul>;
 };
