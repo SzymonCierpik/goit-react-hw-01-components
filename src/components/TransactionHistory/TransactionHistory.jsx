@@ -1,4 +1,4 @@
-export const Profile = props => {
+export const Profile = (props) => {
   return (
     <table class="transaction-history">
       <thead>

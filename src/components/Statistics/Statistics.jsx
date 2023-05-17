@@ -1,4 +1,4 @@
-export const Profile = props => {
+export const Statistics = (props) => {
   return (
     <section class="statistics">
       <h2 class="title">Upload stats</h2>
