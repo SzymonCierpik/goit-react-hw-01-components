@@ -1,6 +1,6 @@
-export const Profile = (props) => {
+export const TransactionHistory = ({ items }) => {
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -8,18 +8,14 @@ export const Profile = (props) => {
           <th>Currency</th>
         </tr>
       </thead>
-
       <tbody>
-        <tr>
-          <td>Invoice</td>
-          <td>125</td>
-          <td>USD</td>
-        </tr>
-        <tr>
-          <td>Withdrawal</td>
-          <td>85</td>
-          <td>USD</td>
-        </tr>
+        {items.map(transaction => (
+          <tr key={transaction.id}>
+            <td>{transaction.type}</td>
+            <td>{transaction.amount}</td>
+            <td>{transaction.currency}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
