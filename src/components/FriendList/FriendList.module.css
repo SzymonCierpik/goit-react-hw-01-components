@@ -1,36 +1,39 @@
 .item {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  padding: 10px 10px;
-  border: 2px solid black;
-  background-color: royalblue;
+  margin-top: 20px;
+  border: 4px solid black;
+  border-radius: 50%;
   box-shadow: 5px 5px 10px;
 }
 
 .name {
   color: white;
   font-weight: bold;
-  margin: 0 auto;
 }
 
 .statusOnline {
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
   border-radius: 50%;
-  background-color: chartreuse;
+  width: 100%;
+  height: 100%;
+  background-color: green;
 }
 
 .statusOffline {
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
   border-radius: 50%;
-  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-color: brown;
 }
 
-ul {
+img {
+  margin: 0 auto;
+  width: 40%;
+  padding-top: 25%;
+}
+
+p {
   text-align: center;
-  margin: 20px auto;
-  width: 400px;
 }
