@@ -1,38 +1,5 @@
-.item {
-  width: 50px;
-  height: 50px;
+.friendList {
   display: flex;
-  margin-top: 20px;
-  border: 4px solid black;
-  border-radius: 50%;
-  box-shadow: 5px 5px 10px;
-}
-
-.name {
-  color: white;
-  font-size: x-small;
-}
-
-.statusOnline {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  background-color: green;
-}
-
-.statusOffline {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  background-color: brown;
-}
-
-img {
-  margin: 0 auto;
-  width: 40%;
-  padding-top: 17%;
-}
-
-p {
-  text-align: center;
+  justify-content: center;
+  gap: 25px;
 }
